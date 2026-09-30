@@ -1,0 +1,61 @@
+# Meeting Transcription
+
+  Meeting started: 30/9/2026, 17:17:19
+  Duration: 6 minutes
+  Participants: Daniel Tomás García, Luis Yana Espinoza, Paul Perez, Tec. Luis J. López M.
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/HLtW3ie3KOGTHzl77D1p?o=txt)
+
+    
+
+  
+
+  
+    ## Highlights
+
+    > 02:48 Luis Yana Espinoza: Creo que ahora ya eso es contigo Daniel contigo Paul que vas a avanzar a la par el chat de WhatsApp ahí no hay paso grupo paso dos tres cuatro al ser conversacional, pues el objetivo es que se cumplan todas las condiciones del paso uno al cuatro que hemos hablado Solo que no en paso no.
+> 03:21 Luis Yana Espinoza: Ya okay, Okay no te preocupes, está bien Ahora muchachos, nada Daniel necesitamos esto para mañana. Al mediodía dijeron prototipo Okay vengan con el prototipo pueden hacer más allá de eso perfecto. Yo voy a encargarme.
+> 05:10 Luis Yana Espinoza: Bueno tú Claudia si no tú quédate con lo de ahí y cualquier cosa que tengas consulta López sobre tema de Claudia me refiero cobranza contabilidad y demás le pregunto no deberían haber consultas Por qué Porque Claudia dice que ella no llama nuevo centro sino que todo está integrado base que son creación de cotización carga de abonos pero igual Cualquier cosa le preguntas Ya ya muchachos, eso Nada eso es que lo logramos para mañana.
+
+  ## Transcript
+
+  00:00 Tec. Luis J. López M.: se toma una ya que toma notas OK Sí ve comentando Diana
+00:04 Luis Yana Espinoza: El Paso uno es todo lo relacionado a la cotización la creación de la recreación y la existencia de la cotización. Estoy imaginando le pides algo y la el la interfaz preguntará Entonces le muestras las cotizaciones que tienes para que el usuario seleccione si es que no hay, le dices no hay cotización Hay que crear y le pides los datos mínimos que hemos acordado ahí López te va a apoyar con les va a apoyar a ustedes Cuáles son paso dos abono, si es que la si es que la Constitución no tiene abono, entonces Se le pide cargar un comprobante.
+00:52 Luis Yana Espinoza: Se una vez que cargar el comprobante Se le pide la cuenta, se manda y listo paso tres creación del expediente lo que sea solo un documento ya si es que algo mal carga, se lo va a observar operaciones.
+01:13 Tec. Luis J. López M.: Hola, estoy transcribiendo esta llamada con mi extensión Tactiq AI. https://tactiq.io/r/transcribing
+01:13 Luis Yana Espinoza: Entonces carga la la ficha Rut con eso sacar el expediente listo, paso ofertamos paso tres complicado. Pasamos al paso. El paso cuatro es la creación del del certificado, se le va a pedir de nuevo la información que no se tenga no hay que pedir al usuario información que ya tenemos, por ejemplo, el alcance la dirección la dirección, yo creo que la dirección certificada, aunque eso lo podemos obtener con el Rut igual, hay que mostrarlo para que Y ya una vez que está hecho eso ahí termina y el paso cinco es la emisión de certificado, se le pregunta qué quieres borrador? Se le pulsa borrador, se le manda el borrador pulsa oficial, se le mande el oficial obviamente toda la información del paso uno dos tres cuatro cinco debe estar en nuestra base de datos no es un flujo completamente distinto no es una base de datos distinta todo funciona con los centros, que ya tenemos, es más los centros que tenemos ni siquiera deberían modificarse.
+02:19 Luis Yana Espinoza: No tendrían que tener la necesidad ahora el otro escenario es que tú en El Paso uno El vendedor ingresa al Rut y la se le pregunta. Al tengo cotizaciones. Sí Ah ya tengo estas cotizaciones selecciona la primera y curiosamente la primera ya tiene cargada labor, ya tiene que pagar el expediente, Qué sucede en ese caso se va directamente al paso cuatro que es la información. dudas consultas
+02:47 Tec. Luis J. López M.: No, por mi lado no.
+02:48 Luis Yana Espinoza: Creo que ahora ya eso es contigo Daniel contigo Paul que vas a avanzar a la par el chat de WhatsApp ahí no hay paso grupo paso dos tres cuatro al ser conversacional, pues el objetivo es que se cumplan todas las condiciones del paso uno al cuatro que hemos hablado Solo que no en paso no.
+03:08 Paul Perez: Sí, sí, sí, sí sí, entiendo igual igual va a ser por pasos, o sea.
+03:11 Tec. Luis J. López M.: Exacto de igualito, básicamente la conversación se basaría en irse a los mismos pasos.
+03:16 Paul Perez: Claro Va a ser los mismos pasos que no no, no, no va a ser muy patente, o sea el
+03:16 Luis Yana Espinoza: Ya está bien.
+03:20 Paul Perez: usuario no va a ver que ahí pases.
+03:21 Luis Yana Espinoza: Ya okay, Okay no te preocupes, está bien Ahora muchachos, nada Daniel necesitamos esto para mañana. Al mediodía dijeron prototipo Okay vengan con el prototipo pueden hacer más allá de eso perfecto. Yo voy a encargarme.
+03:39 Daniel Tomás García: Lo tienes con confianza.
+03:40 Luis Yana Espinoza: Ya muchachos necesitan algo de mi parte?
+03:45 Tec. Luis J. López M.: Sabes que una cosita más cuando van a emitir El oficial Sabes que hay como que le muestran una preview de que si está apagado entonces esa cuestión en algo afecta eso porque yo sé que ellos llenan unos chats.
+03:56 Luis Yana Espinoza: no no no no no no no
+03:57 Tec. Luis J. López M.: No Okay no se tome en cuenta.
+03:59 Luis Yana Espinoza: en los
+04:03 Tec. Luis J. López M.: Okay.
+04:11 Paul Perez: Me refiero lo sé, pues que le vas a pasar a Daniel también me lo pasas también al mismo tiempo a mí y si puedes.
+04:21 Tec. Luis J. López M.: No, tranquilo Aquí no, aquí no vamos a basar en pasarnos maldados, porque sabes que ahorita está todo Ahí todos. Usamos ya esa es la realidad y y ahí tendrías todo contexto de información e incluso con ella, pues y demás.
+04:34 Luis Yana Espinoza: Ya perfecto, si pueden bajarse mejor ahora López igual pásales de solo los tempos necesarias, no? Porque tú sabes que el proyecto tuvimos un montón, pero solo hay que tratarme.
+04:46 Tec. Luis J. López M.: No, es que es que es que también ellos me van a pedir requerimientos, o sea, ahí donde se va a agregar cosas.
+04:50 Luis Yana Espinoza: Ya okay, No no.
+04:54 Tec. Luis J. López M.: No sé Ahí saldrán O sea no influya lo que creo que queda cotización, eso no va a cambiar. Va a crear capaz otra cosa.
+05:03 Luis Yana Espinoza: Ya muchachos Cualquier cosa me escriben Ya esto es urgente Focus por favor, no están para nadie ahorita.
+05:09 Tec. Luis J. López M.: Vale.
+05:10 Luis Yana Espinoza: Bueno tú Claudia si no tú quédate con lo de ahí y cualquier cosa que tengas consulta López sobre tema de Claudia me refiero cobranza contabilidad y demás le pregunto no deberían haber consultas Por qué Porque Claudia dice que ella no llama nuevo centro sino que todo está integrado base que son creación de cotización carga de abonos pero igual Cualquier cosa le preguntas Ya ya muchachos, eso Nada eso es que lo logramos para mañana.
+05:38 Tec. Luis J. López M.: Cómo lo Cómo cómo llamamos esta vista? O cómo llamamos? Porque sabes que al lado siempre le pone los nombres poéticos.
+05:46 Luis Yana Espinoza: Ya ahí te digo ponle Cualquier nombre, de momento se modifica pero esta vaina yo creo que no tiene que estar dentro del como menú en el entrenamiento al menos no, ahora, o sea hay que crearlo dentro del internet. certificados y así Esa estructura pero no hay que poner la opción visible en
+06:10 Tec. Luis J. López M.: Ok menú oculto Daniel está experto en eso?
+06:13 Luis Yana Espinoza: Exacto vamos a acceder por url.
+06:17 Tec. Luis J. López M.: ok
+06:18 Luis Yana Espinoza: Ya muchachos Cualquier cosa me avisan ya.
+06:22 Tec. Luis J. López M.: Ok Ya le pasó a todito la transcripción.
+06:24 Luis Yana Espinoza: ya full con esto muchachos full con esto por favor, Gracias
+06:28 Tec. Luis J. López M.: Ya va más bien este.
+  
