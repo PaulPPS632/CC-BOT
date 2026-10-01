@@ -3,5 +3,17 @@
   "name": "cc-bot",
   "main": "src/index.ts",
   "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "GOOGLE_LOCATION": "us-central1",
+    "GEMINI_MODEL": "gemini-2.5-flash"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cc-bot-db",
+      "database_id": "2da5c77b-c5c6-4b92-a7c0-7463c56d1855"
+    }
+  ],
   "observability": { "enabled": true }
 }

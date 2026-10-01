@@ -33,23 +33,52 @@ export async function isValidTwilioSignature(
   }
 }
 
+// Returns true if Twilio accepted the message and, for media, it didn't fail afterwards.
 export async function sendWhatsApp(
   env: Env,
   from: string,
   to: string,
   body: string,
-): Promise<void> {
+  mediaUrl?: string,
+): Promise<boolean> {
+  const auth = `Basic ${btoa(`${env.TWILIO_ACCOUNT_SID}:${env.TWILIO_AUTH_TOKEN}`)}`;
+  const form = new URLSearchParams({ From: from, To: to, Body: body });
+  if (mediaUrl) form.set("MediaUrl", mediaUrl);
   const res = await fetch(
     `https://api.twilio.com/2010-04-01/Accounts/${env.TWILIO_ACCOUNT_SID}/Messages.json`,
     {
       method: "POST",
-      headers: {
-        Authorization: `Basic ${btoa(`${env.TWILIO_ACCOUNT_SID}:${env.TWILIO_AUTH_TOKEN}`)}`,
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: new URLSearchParams({ From: from, To: to, Body: body }),
+      headers: { Authorization: auth, "Content-Type": "application/x-www-form-urlencoded" },
+      body: form,
     },
   );
   const text = await res.text();
   console.log(`twilio send status=${res.status} body=${text}`);
+  if (!res.ok) return false;
+  if (!mediaUrl) return true;
+
+  // Media failures (unreachable URL, wrong type, too big) are reported asynchronously:
+  // poll the message briefly to find out whether it really went out.
+  const { sid } = JSON.parse(text) as { sid: string };
+  for (let attempt = 0; attempt < 3; attempt++) {
+    await new Promise((r) => setTimeout(r, 2500));
+    const check = await fetch(
+      `https://api.twilio.com/2010-04-01/Accounts/${env.TWILIO_ACCOUNT_SID}/Messages/${sid}.json`,
+      { headers: { Authorization: auth } },
+    );
+    const m = (await check.json()) as { status: string; error_code: number | null; error_message: string | null };
+    console.log(`twilio media check url=${mediaUrl} status=${m.status} error=${m.error_code} ${m.error_message ?? ""}`);
+    if (m.status === "failed" || m.status === "undelivered") return false;
+    if (["sent", "delivered", "read"].includes(m.status)) return true;
+  }
+  return true; // still in flight; don't send the link twice
+}
+
+export async function isAllowedNumber(db: D1Database, from: string): Promise<boolean> {
+  const phone = from.replace(/^whatsapp:/, "").replace(/\s+/g, "");
+  const row = await db
+    .prepare("SELECT 1 FROM allowed_numbers WHERE phone = ?")
+    .bind(phone)
+    .first();
+  return row !== null;
 }

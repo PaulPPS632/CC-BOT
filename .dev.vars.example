@@ -1,2 +1,6 @@
 TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 TWILIO_AUTH_TOKEN=your_twilio_auth_token
+GOOGLE_CREDENTIALS={"type":"service_account","project_id":"..."}
+CERT_API_URL=https://backend.example.com
+ICO_USUARIO=your_user
+ICO_PASSWORD=your_password
